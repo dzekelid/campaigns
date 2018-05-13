@@ -36,9 +36,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-schedules-test-post.md
-- name: SendGrid Delete Campaigns Campaign
+- name: SendGrid Get Campaigns Campaign
   description: |-
-    **This endpoint allows you to delete a specific campaign.**
+    **This endpoint allows you to retrieve a specific campaign.**
 
     Our Marketing Campaigns API lets you create, manage, send, and schedule campaigns.
 
@@ -51,7 +51,9 @@ apis:
   tags: Campaigns
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
