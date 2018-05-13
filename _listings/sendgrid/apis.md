@@ -36,9 +36,12 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-schedules-test-post.md
-- name: SendGrid Patch Campaigns Campaign
+- name: SendGrid Delete Campaigns Campaign  Schedules
   description: |-
-    Update a campaign. This is especially useful if you only set up the campaign using POST /campaigns, but didn't set many of the parameters.
+    **This endpoint allows you to unschedule a campaign that has already been scheduled to be sent.**
+
+    A successful unschedule will return a 204.
+    If the specified campaign is in the process of being sent, the only option is to cancel (a different method).
 
     For more information:
 
@@ -49,7 +52,7 @@ apis:
   tags: Campaigns
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-schedules-delete.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
