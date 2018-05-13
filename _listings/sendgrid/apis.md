@@ -36,11 +36,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-schedules-test-post.md
-- name: SendGrid Get Campaigns Campaign
+- name: SendGrid Patch Campaigns Campaign
   description: |-
-    **This endpoint allows you to retrieve a specific campaign.**
-
-    Our Marketing Campaigns API lets you create, manage, send, and schedule campaigns.
+    Update a campaign. This is especially useful if you only set up the campaign using POST /campaigns, but didn't set many of the parameters.
 
     For more information:
 
@@ -51,9 +49,7 @@ apis:
   tags: Campaigns
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/sendgrid/campaigns-campaign-id-patch.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
