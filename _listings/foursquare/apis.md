@@ -7,113 +7,123 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/203-foursq
 x-kinRank: "9"
 x-alexaRank: "2544"
 tags: Campaigns
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-25"
+modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Foursquare Post Campaigns Add
-  x-api-slug: foursquare
+- name: Foursquare - Post Campaigns Add
+  x-api-slug: campaignsadd-post
   description: /campaigns/{CAMPAIGN_ID}
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/203-foursquare.jpg
   humanURL: http://blog.foursquare.com
-  baseURL: https://api.foursquare.com//v2///campaigns/add
-  tags: Campaigns
+  baseURL: https://api.foursquare.com//v2/
+  tags: Games, Mobile, Social, Coupons, Deals, Local, Merchants, Places, Stack Network,
+    Stack, Getting Started Example, Technology, internet, API Provider, Checkins,
+    Profiles, General Data, Relative Data, Pedestal, Locations, Locations, Historical
+    Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignsadd-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignsadd-post-openapi.md
-- name: Foursquare Get Campaigns List
-  x-api-slug: foursquare
+- name: Foursquare - Get Campaigns List
+  x-api-slug: campaignslist-get
   description: /campaigns/add
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/203-foursquare.jpg
   humanURL: http://blog.foursquare.com
-  baseURL: https://api.foursquare.com//v2///campaigns/list
-  tags: Campaigns,List
+  baseURL: https://api.foursquare.com//v2/
+  tags: Games, Mobile, Social, Coupons, Deals, Local, Merchants, Places, Stack Network,
+    Stack, Getting Started Example, Technology, internet, API Provider, Checkins,
+    Profiles, General Data, Relative Data, Pedestal, Locations, Locations, Historical
+    Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignslist-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignslist-get-openapi.md
-- name: Foursquare Get Campaigns
-  x-api-slug: foursquare
+- name: Foursquare - Get Campaigns
+  x-api-slug: campaignscampaign-id-get
   description: /specials/{SPECIAL_ID}/retire
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/203-foursquare.jpg
   humanURL: http://blog.foursquare.com
-  baseURL: https://api.foursquare.com//v2///campaigns/{CAMPAIGN_ID}
-  tags: Campaigns
+  baseURL: https://api.foursquare.com//v2/
+  tags: Games, Mobile, Social, Coupons, Deals, Local, Merchants, Places, Stack Network,
+    Stack, Getting Started Example, Technology, internet, API Provider, Checkins,
+    Profiles, General Data, Relative Data, Pedestal, Locations, Locations, Historical
+    Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignscampaign-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignscampaign-id-get-openapi.md
-- name: Foursquare Post Campaigns Delete
-  x-api-slug: foursquare
+- name: Foursquare - Post Campaigns Delete
+  x-api-slug: campaignscampaign-iddelete-post
   description: /campaigns/{CAMPAIGN_ID}/timeseries
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/203-foursquare.jpg
   humanURL: http://blog.foursquare.com
-  baseURL: https://api.foursquare.com//v2///campaigns/{CAMPAIGN_ID}/delete
-  tags: Campaigns
+  baseURL: https://api.foursquare.com//v2/
+  tags: Games, Mobile, Social, Coupons, Deals, Local, Merchants, Places, Stack Network,
+    Stack, Getting Started Example, Technology, internet, API Provider, Checkins,
+    Profiles, General Data, Relative Data, Pedestal, Locations, Locations, Historical
+    Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignscampaign-iddelete-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignscampaign-iddelete-post-openapi.md
-- name: Foursquare Post Campaigns End
-  x-api-slug: foursquare
+- name: Foursquare - Post Campaigns End
+  x-api-slug: campaignscampaign-idend-post
   description: /campaigns/{CAMPAIGN_ID}/delete
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/203-foursquare.jpg
   humanURL: http://blog.foursquare.com
-  baseURL: https://api.foursquare.com//v2///campaigns/{CAMPAIGN_ID}/end
-  tags: Campaigns,End
+  baseURL: https://api.foursquare.com//v2/
+  tags: Games, Mobile, Social, Coupons, Deals, Local, Merchants, Places, Stack Network,
+    Stack, Getting Started Example, Technology, internet, API Provider, Checkins,
+    Profiles, General Data, Relative Data, Pedestal, Locations, Locations, Historical
+    Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignscampaign-idend-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignscampaign-idend-post-openapi.md
-- name: Foursquare Post Campaigns Start
-  x-api-slug: foursquare
+- name: Foursquare - Post Campaigns Start
+  x-api-slug: campaignscampaign-idstart-post
   description: /campaigns/{CAMPAIGN_ID}/end
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/203-foursquare.jpg
   humanURL: http://blog.foursquare.com
-  baseURL: https://api.foursquare.com//v2///campaigns/{CAMPAIGN_ID}/start
-  tags: Campaigns,Start
+  baseURL: https://api.foursquare.com//v2/
+  tags: Games, Mobile, Social, Coupons, Deals, Local, Merchants, Places, Stack Network,
+    Stack, Getting Started Example, Technology, internet, API Provider, Checkins,
+    Profiles, General Data, Relative Data, Pedestal, Locations, Locations, Historical
+    Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignscampaign-idstart-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignscampaign-idstart-post-openapi.md
-- name: Foursquare Get Campaigns Timeseries
-  x-api-slug: foursquare
+- name: Foursquare - Get Campaigns Timeseries
+  x-api-slug: campaignscampaign-idtimeseries-get
   description: /campaigns/list
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/203-foursquare.jpg
   humanURL: http://blog.foursquare.com
-  baseURL: https://api.foursquare.com//v2///campaigns/{CAMPAIGN_ID}/timeseries
-  tags: Campaigns,Timeseries
+  baseURL: https://api.foursquare.com//v2/
+  tags: Games, Mobile, Social, Coupons, Deals, Local, Merchants, Places, Stack Network,
+    Stack, Getting Started Example, Technology, internet, API Provider, Checkins,
+    Profiles, General Data, Relative Data, Pedestal, Locations, Locations, Historical
+    Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignscampaign-idtimeseries-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/campaignscampaign-idtimeseries-get-openapi.md
-- name: Foursquare
-  x-api-slug: foursquare
-  description: foursquare makes the real world easier to use. We build tools that
-    help you keep up with friends, discover whats nearby, save money and unlock deals.
-    Whether youre setting off on a trip around the world, coordinating a night out
-    with friends, or trying to pick out the best dish at your local restaurant, foursquare
-    is the perfect companion. The foursquare API gives you access to all of the data
-    used by the foursquare mobile applications, and, in some cases, even more.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/203-foursquare.jpg
-  humanURL: http://blog.foursquare.com
-  baseURL: https://api.foursquare.com//v2/
-  tags: Campaigns
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/foursquare/openapi.md
 x-common:
 - type: x-api-json--authoritative
   url: http://apis.io/apisdef/legacy/foursquare.json
+- type: x-api-gallery
+  url: http://fluxiom.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://foursquare.stack.network
 - type: x-apigee-console
   url: https://api.apigee.com/v1/consoles/foursquare/apidescription?format=internal&ver=1393644831000
 - type: x-application-management

@@ -7,135 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-call
 x-kinRank: "9"
 x-alexaRank: "129466"
 tags: Campaigns
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-25"
+modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Callfire Find a specific batch
-  x-api-slug: callfire
-  description: Returns a single Batch instance for a given batch id. This API is useful
-    for determining the state of a validating batch
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//campaigns/batches/{id}
-  tags: Campaigns,Batches
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/campaignsbatchesid-get-openapi.md
-- name: Callfire Update a batch
-  x-api-slug: callfire
-  description: Updates a single Batch instance, currently batch can only be turned
-    "on/off"
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//campaigns/batches/{id}
-  tags: Campaigns,Batches
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/campaignsbatchesid-put-openapi.md
-- name: Callfire Find sounds
-  x-api-slug: callfire
-  description: To find all campaign sounds which were created by user. Returns all
-    sounds available to be used in campaigns
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//campaigns/sounds
-  tags: Campaigns,Sounds
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/campaignssounds-get-openapi.md
-- name: Callfire Add sound via call
-  x-api-slug: callfire
-  description: Use this API to create a sound via a phone call. Provide the required
-    phone number in the CallCreateSound object inside the request, and user will receive
-    a call shortly after with instructions on how to record a sound over the phone.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//campaigns/sounds/calls
-  tags: Campaigns,Sounds,Calls
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/campaignssoundscalls-post-openapi.md
-- name: Callfire Add sound via file
-  x-api-slug: callfire
-  description: Create a campaign sound file via a supplied .mp3 or .wav file
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//campaigns/sounds/files
-  tags: Campaigns,Sounds,Files
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/campaignssoundsfiles-post-openapi.md
-- name: Callfire Add sound via text-to-speech
-  x-api-slug: callfire
-  description: 'Use this API to create a sound file via a supplied string of text.
-    Add a text in the TextToSpeech.message field, and pick a voice in the TextToSpeech.voice
-    field. Available voices are: MALE1, FEMALE1, FEMALE2, SPANISH1, FRENCHCANADIAN1'
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//campaigns/sounds/tts
-  tags: Campaigns,Sounds,Tts
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/campaignssoundstts-post-openapi.md
-- name: Callfire Delete a specific sound
-  x-api-slug: callfire
-  description: Deletes a single campaign sound instance for a specific campaign sound
-    id, this operation does not delete sound completely, it sets sound status to ARCHIVED
-    which means that sound will no longer appear in 'find' operation results, but
-    still accessible via 'get' operation
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//campaigns/sounds/{id}
-  tags: Campaigns,Sounds
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/campaignssoundsid-delete-openapi.md
-- name: Callfire Find a specific sound
-  x-api-slug: callfire
-  description: Returns a single CampaignSound instance for a given sound id in campaign.
-    This is a meta data to the sounds. No audio data is returned from this API
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//campaigns/sounds/{id}
-  tags: Campaigns,Sounds
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/campaignssoundsid-get-openapi.md
-- name: Callfire Download a MP3 sound
-  x-api-slug: callfire
-  description: Download the MP3 version of a hosted file. This is an audio data endpoint.
-    Returns binary response of the 'audio/mpeg' content type
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//campaigns/sounds/{id}.mp3
-  tags: Campaigns,Sounds.mp3
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/campaignssoundsid-mp3-get-openapi.md
-- name: Callfire Download a WAV sound
-  x-api-slug: callfire
-  description: Download the WAV version of the hosted file. This is an audio data
-    endpoint. Returns binary response of the 'audio/mpeg' content type
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//campaigns/sounds/{id}.wav
-  tags: Campaigns,Sounds.wav
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/campaignssoundsid-wav-get-openapi.md
-- name: Callfire
-  x-api-slug: callfire
-  description: Grow your business with virtual phone numbers, IVR, voice broadcasting,
-    mass text messaging services and power dialing. Try CallFire for FREE!
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
-  humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2
-  tags: Campaigns
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/callfire/openapi.md
+apis: []
 x-common:
 - type: x--net-sdk
   url: https://github.com/CallFire/CallFire-CSharp-SDK
@@ -143,6 +19,10 @@ x-common:
   url: https://answers.callfire.com/hc/en-us/sections/200166268-Billing
 - type: x-account-settings
   url: https://answers.callfire.com/hc/en-us/sections/200187056-Account-Settings
+- type: x-api-gallery
+  url: http://bureau.of.justice.statistics.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://callfire.stack.network
 - type: x-authentication
   url: https://www.callfire.com/api-documentation/how-do-i-enable-api-on-my-account
 - type: x-blog

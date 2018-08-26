@@ -7,38 +7,32 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/171-consta
 x-kinRank: "7"
 x-alexaRank: "1364"
 tags: Campaigns
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-25"
+modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/constant-contact/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Constant Contact List Campaigns
-  x-api-slug: constant-contact
+- name: Constant Contact - List Campaigns
+  x-api-slug: usernamecampaigns-get
   description: List Campaigns
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/171-constant-contact.jpg
   humanURL: http://blogs.constantcontact.com
-  baseURL: https://api.constantcontact.com//ws/customers///{username}/campaigns
-  tags: List,Campaigns
+  baseURL: https://api.constantcontact.com//ws/customers/
+  tags: Social Media Marketing, Email Marketing, CRM, Federal Government, Federal
+    Government, Federal Government, Federal Government, Getting Started Example, SaaS,
+    Technology, API Provider, Surveys, Emails, Profiles, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/constant-contact/usernamecampaigns-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/constant-contact/usernamecampaigns-get-openapi.md
-- name: Constant Contact
-  x-api-slug: constant-contact
-  description: With Constant Contact, you can create effective email marketing and
-    other online marketing campaigns to meet your business goals. Start your FREE
-    trial today!
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/171-constant-contact.jpg
-  humanURL: http://blogs.constantcontact.com
-  baseURL: https://api.constantcontact.com//ws/customers/
-  tags: Campaigns
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/constant-contact/openapi.md
 x-common:
 - type: x--net-library
   url: https://github.com/constantcontact/.net-sdk
+- type: x-api-gallery
+  url: http://compile.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://constant.contact.stack.network
 - type: x-authentication
   url: http://developer.constantcontact.com/docs/authentication/authentication.html
 - type: x-base

@@ -8,73 +8,65 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Campaigns
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-25"
+modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/hhs-media-services/apis.md
 specificationVersion: "0.14"
 apis:
-- name: HHS Media Services Get Campaigns
-  x-api-slug: hhs-media-services
+- name: HHS Media Services - Get Campaigns
+  x-api-slug: resourcescampaigns-json-get
   description: Returns the list of Campaigns.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/hhs-media-services.png
   humanURL: https://api.digitalmedia.hhs.gov/
-  baseURL: https://api.digitalmedia.hhs.gov//api/v2//resources/campaigns.json
-  tags: Resources,Campaigns
+  baseURL: https://api.digitalmedia.hhs.gov//api/v2
+  tags: Media, API Provider, Videos, Profiles
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/hhs-media-services/resourcescampaigns-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/hhs-media-services/resourcescampaigns-json-get-openapi.md
-- name: HHS Media Services Get Campaign by ID
-  x-api-slug: hhs-media-services
+- name: HHS Media Services - Get Campaign by ID
+  x-api-slug: resourcescampaignsid-json-get
   description: Returns the Campaign identified by the 'id'.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/hhs-media-services.png
   humanURL: https://api.digitalmedia.hhs.gov/
-  baseURL: https://api.digitalmedia.hhs.gov//api/v2//resources/campaigns/{id}.json
-  tags: Resources,Campaigns,Id
+  baseURL: https://api.digitalmedia.hhs.gov//api/v2
+  tags: Media, API Provider, Videos, Profiles
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/hhs-media-services/resourcescampaignsid-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/hhs-media-services/resourcescampaignsid-json-get-openapi.md
-- name: HHS Media Services Get MediaItems by Campaign ID
-  x-api-slug: hhs-media-services
+- name: HHS Media Services - Get MediaItems by Campaign ID
+  x-api-slug: resourcescampaignsidmedia-json-get
   description: Returns the list of MediaItems for the Campaign identified by the 'id'.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/hhs-media-services.png
   humanURL: https://api.digitalmedia.hhs.gov/
-  baseURL: https://api.digitalmedia.hhs.gov//api/v2//resources/campaigns/{id}/media.json
-  tags: Resources,Campaigns,Id,Media
+  baseURL: https://api.digitalmedia.hhs.gov//api/v2
+  tags: Media, API Provider, Videos, Profiles
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/hhs-media-services/resourcescampaignsidmedia-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/hhs-media-services/resourcescampaignsidmedia-json-get-openapi.md
-- name: HHS Media Services Get MediaItems for Campaign
-  x-api-slug: hhs-media-services
+- name: HHS Media Services - Get MediaItems for Campaign
+  x-api-slug: resourcescampaignsidsyndicate-json-get
   description: Renders the list of MediaItems associated with the Campaign identified
     by the 'id'.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/hhs-media-services.png
   humanURL: https://api.digitalmedia.hhs.gov/
-  baseURL: https://api.digitalmedia.hhs.gov//api/v2//resources/campaigns/{id}/syndicate.json
-  tags: Resources,Campaigns,Id,Syndicate
+  baseURL: https://api.digitalmedia.hhs.gov//api/v2
+  tags: Media, API Provider, Videos, Profiles
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/hhs-media-services/resourcescampaignsidsyndicate-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/hhs-media-services/resourcescampaignsidsyndicate-json-get-openapi.md
-- name: HHS Media Services
-  x-api-slug: hhs-media-services
-  description: Use this API platform to create sites with text and multimedia content
-    for syndication. CDC, FDA, HHS, and NIH have built syndication sites using this
-    platform, which is available in Java and .NET.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/hhs-media-services.png
-  humanURL: https://api.digitalmedia.hhs.gov/
-  baseURL: https://api.digitalmedia.hhs.gov//api/v2
-  tags: Campaigns
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/campaigns/master/_listings/hhs-media-services/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://hewlett.packard.enterprise.hpe.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://hhs.media.services.stack.network
 - type: x-website
   url: https://api.digitalmedia.hhs.gov/
 include: []
